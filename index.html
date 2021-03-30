@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1>QR Code Scanner</h1>
+      <h3 id="process" hidden="">Scanning...</h3>
+
+      <a id="btn-scan-qr">
+        <img
+          src="https://uploads.sitepoint.com/wp-content/uploads/2017/07/1499401426qr_icon.svg"
+          alt="Press to Scan"
+        />
+      </a>
+
+      <canvas hidden="" id="qr-canvas"></canvas>
+
+      <div id="qr-result" hidden="">
+        <strong>Data:</strong> <span id="outputData"></span>
+      </div>
+    </div>
+
+    <script src="./qr_packed.js"></script>
+    <script src="./qrCodeScanner.js"></script>
+  </body>
+</html>
